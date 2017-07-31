@@ -17,15 +17,13 @@
 	<link rel="icon" href="img/icon.png" sizes="32x32">
 	<!--  Android 5 Chrome Color-->
 	<meta name="theme-color" content="#EE6E73">
-	<!-- <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">CSS-->
-	<link href="css/prism.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-
-	<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
 </head>
-
 <body class="parallax-demo">
 	<header>
 		<nav>
@@ -47,7 +45,15 @@
 						<li><a href="#">Ediciones</a></li>
 						<li><a href="convocatorias.html">Convocatorias</a></li>
 					</ul>
-					<a class="button-collapse" href="#" data-activates='nav-mobile'><i class="mdi-navigation-menu"></i></a>
+					<ul id="nav-mobile" class="side-nav black lighten-2">
+						<li><a href="index.html"><i class="mdi-navigation-arrow-back"></i></a></li>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="nosotros.html">Quiénes Somos</a></li>
+						<li><a href="#">Secciones</a></li>
+						<li><a href="#">Ediciones</a></li>
+						<li><a href="convocatorias.html">Convocatorias</a></li>
+          </ul>
+					<a href="#" data-activates="slide-out" class="button-collapse lighten-2 left"><i class="material-icons">menu</i></a>
 				</div>
 			</div>
 		</nav>
@@ -61,10 +67,10 @@
 		</div>
 		<div class="section white">
 			<div class="row container">
-				<h2 class="header">1era Edición</h2>
+				<h2 class="header center">1era Edición</h2>
 				<p class="grey-text text-darken-3 lighten-3">Después de varios meses de trabajo les presentamos la primera edición de la Revista bajo el tema: Antropología y Transformación Social</p>
 			</div>
-			<div class="row container">
+			<div class="row container ">
 				<iframe width="700px" height="425px" src="https://s3.amazonaws.com/online.fliphtml5.com/nuib/sttb/index.html#p=1" frameborder="0" allowfullscreen allowtransparency></iframe>
 				</div>
 		</div>
