@@ -17,38 +17,43 @@
 	<link rel="icon" href="img/icon.png" sizes="32x32">
 	<!--  Android 5 Chrome Color-->
 	<meta name="theme-color" content="#EE6E73">
-	<!-- <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">CSS-->
-	<link href="css/prism.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-
-	<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
 </head>
 
 <body class="parallax-demo">
 	<header>
-		<nav>
-			<div class="container">
-				<div class="nav-wrapper">
+		<nav class="top-nav black" role="navigation">
+			<div class="nav-wrapper container">
 					<a href="index.html" class="brand-logo"><img src="img/logo2.png"></a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="index.html">Inicio</a></li>
+				<ul class="right hide-on-med-and-down">
+					<ul id="nav-mobile" class="fixed right hide-on-med-and-down white-text">
+						<li><a href="index.html" >Inicio</a></li>
 						<li><a href="nosotros.html">Quiénes Somos</a></li>
 						<li><a href="#">Secciones</a></li>
 						<li><a href="#">Ediciones</a></li>
 						<li><a href="convocatorias.html">Convocatorias</a></li>
 					</ul>
-					<ul class="right side-nav" id="nav-mobile">
-						<li class="hide-on-small-only"><a href="index.html"><i class="mdi-navigation-arrow-back"></i></a></li>
-            <li><a href="index.html">Inicio</a></li>
-						<li><a href="nosotros.html">Quiénes Somos</a></li>
-						<li><a href="#">Secciones</a></li>
-						<li><a href="#">Ediciones</a></li>
-						<li><a href="convocatorias.html">Convocatorias</a></li>
-					</ul>
-					<a class="button-collapse" href="#" data-activates='nav-mobile'><i class="mdi-navigation-menu"></i></a>
-				</div>
+				</ul>
+				<ul id="slide-out" class="side-nav black white-text">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="nosotros.html">Quiénes Somos</a></li>
+					<li><a href="#">Secciones</a></li>
+					<li><a href="#">Ediciones</a></li>
+					<li><a href="convocatorias.html">Convocatorias</a></li>
+				</ul>
+				<ul id="nav-mobile" class="side-nav black white-text">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="nosotros.html">Quiénes Somos</a></li>
+					<li><a href="#">Secciones</a></li>
+					<li><a href="#">Ediciones</a></li>
+					<li><a href="convocatorias.html">Convocatorias</a></li>
+				</ul>
+				<a href="#" data-activates="slide-out" class="button-collapse lighten-2 left"><i class="material-icons">menu</i></a>
 			</div>
 		</nav>
 	</header>
@@ -71,8 +76,11 @@
 				<div style="text-align:center;">
           <div style="margin:8px 0px 4px;"><a href="http://www.calameo.com/books/004512207b3efb5e18868" target="_blank">Lineamientos Convocatoria 2017</a>
           </div>
-          <iframe src="//v.calameo.com/?bkcode=004512207b3efb5e18868" width="700" height="425" frameborder="0" scrolling="no" allowtransparency allowfullscreen style="margin:0 auto;">
-          </iframe>
+					<div class="container iframee">
+						<iframe src="//v.calameo.com/?bkcode=004512207b3efb5e18868" width="700" height="425" frameborder="0" scrolling="no" allowtransparency allowfullscreen style="margin:0 auto;">
+						</iframe>
+					</div>
+
           <div style="margin:4px 0px 8px;"></div>
 				</div>
 		</div>
