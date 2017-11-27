@@ -17,60 +17,53 @@
 	<link rel="icon" href="img/icon.png" sizes="32x32">
 	<!--  Android 5 Chrome Color-->
 	<meta name="theme-color" content="#EE6E73">
-	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <script src="js/jquery-1.11.0.min.js"></script>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/init.js"></script>
+	<!-- <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection">CSS-->
+	<link href="css/prism.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+	<link href="http://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body class="parallax-demo">
 	<header>
-		<nav class="top-nav black" role="navigation">
-			<div class="nav-wrapper container">
-					<a href="index.html" class="brand-logo"></a>
-				<ul class="right hide-on-med-and-down">
-					<ul id="nav-mobile" class="fixed right hide-on-med-and-down">
-						<li><a class="white-text" href="index.html" >Inicio</a></li>
-						<li><a class="white-text" href="nosotros.html">Quiénes Somos</a></li>
-						<li><a class="white-text" href="#">Secciones</a></li>
-						<li><a class="white-text" href="#">Ediciones</a></li>
-						<li><a class="white-text" href="convocatorias.html">Convocatorias</a></li>
+		<nav>
+			<div class="container">
+				<div class="nav-wrapper">
+					<!--<a href="index.html" class="brand-logo"><img class="imge" src="img/logo2.png"></a>-->
+					<ul id="nav-mobile" class="right hide-on-med-and-down">
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="nosotros.html">Quiénes Somos</a></li>
+						<li><a href="https://medium.com/@usure_ucr/">Artículos</a></li>
+						<li><a href="convocatorias.html">Convocatorias</a></li>
 					</ul>
-				</ul>
-				<ul id="slide-out" class="side-nav black white-text">
-					<li><a class="white-text" href="index.html">Inicio</a></li>
-					<li><a class="white-text" href="nosotros.html">Quiénes Somos</a></li>
-					<li><a class="white-text" href="#">Secciones</a></li>
-					<li><a class="white-text" href="#">Ediciones</a></li>
-					<li><a class="white-text" href="convocatorias.html">Convocatorias</a></li>
-				</ul>
-				<ul id="nav-mobile" class="side-nav black white-text">
-					<li><a class="white-text" href="index.html">Inicio</a></li>
-					<li><a class="white-text" href="nosotros.html">Quiénes Somos</a></li>
-					<li><a class="white-text" href="#">Secciones</a></li>
-					<li><a class="white-text" href="#">Ediciones</a></li>
-					<li><a class="white-text" href="convocatorias.html">Convocatorias</a></li>
-				</ul>
-				<a href="#" data-activates="slide-out" class="button-collapse lighten-2 left"><i class="material-icons">menu</i></a>
+					<ul class="right side-nav" id="nav-mobile">
+						<li class="hide-on-small-only"><a href="index.html"><i class="mdi-navigation-arrow-back"></i></a></li>
+						<li><a href="index.html">Inicio</a></li>
+						<li><a href="nosotros.html">Quiénes Somos</a></li>
+						<li><a href="https://medium.com/@usure_ucr/">Artículos</a></li>
+						<li><a href="convocatorias.html">Convocatorias</a></li>
+					</ul>
+					<a class="button-collapse" href="#" data-activates='nav-mobile'><i class="mdi-navigation-menu"></i></a>
+				</div>
 			</div>
 		</nav>
 	</header>
 
 	<main>
 		<!--  Parallax Section  -->
-		<div class="parallax-container">
-			<div class="parallax red darken-4"><!--<img src="img/usuren.jpg">--><img class="imge" src="img/logo2.png"></div>
+		<div class="parallax-container paralaxx">
+			<div class="parallax red darken-4"><img class="imge" src="img/logo2.png"></div>
 
 		</div>
 		<div class="section white">
 			<div class="row container">
-				<h2 class="header center">1era Edición</h2>
+				<h2 class="header">1era Edición</h2>
 				<p class="grey-text text-darken-3 lighten-3">Después de varios meses de trabajo les presentamos la primera edición de la Revista bajo el tema: Antropología y Transformación Social</p>
 			</div>
-			<div class="row container iframee">
-				<iframe class="iframed" width="700px" height="425px" src="https://s3.amazonaws.com/online.fliphtml5.com/nuib/sttb/index.html#p=1" frameborder="0" allowfullscreen allowtransparency></iframe>
+			<div class="row container ">
+				<iframe width="700px" height="425px" src="https://s3.amazonaws.com/online.fliphtml5.com/nuib/sttb/index.html#p=1" frameborder="0" allowfullscreen allowtransparency></iframe>
 				</div>
 		</div>
 		<div class="parallax-container">
@@ -79,7 +72,7 @@
 		<div class="section white">
 			<div class="row container">
 				<h2 class="header">Artículos</h2>
-				<p class="grey-text text-darken-3 lighten-3">
+				<p class="grey-text text-darken-3 lighten-3">Lee más en nuestro canal de<a href="https://medium.com/@usure_ucr/"> Medium</a></p>
 					<script async src="https://static.medium.com/embed.js"></script><a class="m-story" href="https://medium.com/@usure_ucr/lanzamiento-1era-edici%C3%B3n-revista-b2e05e7c45c4#.ah56qho94">Lanzamiento 1era Edición Revista – Revista Usure</a>
 			</div>
 		</div>
@@ -90,20 +83,16 @@
 						<h5 class="white-text">Contáctanos</h5>
 						<p class="grey-text text-lighten-4">Bienvenidos sus comentarios y sugerencias</p>
 						<form action="https://formspree.io/revista.antro.ucr@gmail.com" method="POST">
-							<input type="text" name="name" placeholder="Nombre">
-							<input type="email" name="_replyto" placeholder="Correo">
-							<textarea name="consulta" placeholder="Consulta"></textarea>
+							<input type="text" name="name" placeholder="nombre">
+							<input type="email" name="_replyto" placeholder="correo">
 							<input type="submit" value="Enviar">
 						</form>
 
 					</div>
 					<div class="col l4 s12">
 						<h5 class="white-text">Enlaces de Interés</h5>
-						<div class="containeriframee">
-							<iframe class="iframed" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FRevistaUsure%2F&width=450&layout=standard&action=like&size=small&show_faces=false&share=true&height=35&appId" width="450" height="35"
-								scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-						</div>
-
+						<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FRevistaUsure%2F&width=450&layout=standard&action=like&size=small&show_faces=false&share=true&height=35&appId" width="450" height="35" style="border:none;overflow:hidden"
+							scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
 					</div>
 					<div class="col l4 s12" style="overflow: hidden;">
@@ -117,6 +106,21 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- <script src="bin/materialize.js"></script> Scripts-->
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="bin/jquery-2.1.1.min.js"><\/script>');
+			}
+		</script>
+		<!--<script src="js/jquery.timeago.min.js"></script>
+		<script src="js/prism.js"></script>
+		<script src="jade/lunr.min.js"></script>
+		<script src="jade/search.js"></script>-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+		<script src="js/init.js"></script>
+
 </body>
 
 </html>
